@@ -9,13 +9,6 @@ import { useAnime } from "@/context/anime";
 const Swipeable = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const { TopAnime, TopMovie } = useAnime();
-  // useEffect(() => {
-  //   fetchTopAnimeData();
-  // }, [fetchTopAnimeData]);
-
-  // useEffect(() => {
-  //   fetchTopMovieData();
-  // }, [fetchTopMovieData]);
 
   const views = [
     <Views TopList={TopAnime || []} k={0} key={0} type="anime" />,
