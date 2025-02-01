@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --background: #0a0a0a; */
+    --background: #000000;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.gradient-mask {
+  mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 100%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.divBlur {
+  backdrop-filter: blur(10px);
+}
+
+.title {
+  background-color: blue;
+  font-size: 15vw;
+  background-image: url("/bgMain1.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.truncate-multiline {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* Fallback for browsers that do not support -webkit-line-clamp */
+  max-height: calc(2 * 1.75em); /* Assuming line height is 1.25em */
+  line-height: 1.75em; /* Set line height */
+}
+
+.cardAnime__rating.svelte-f98ila.svelte-f98ila {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 16px;
+}
