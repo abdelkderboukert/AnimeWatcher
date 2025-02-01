@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/react-swipeable-views": "^0.13.6",
     "axios": "^1.7.9",
     "lucide-react": "^0.474.0",
     "motion": "^11.17.0",
