@@ -67,28 +67,28 @@ After building, you can start the production server with:
 
 Here's a brief overview of the folder structure:
 
-frontend/
-├── app/ # Next.js application pages
-│ ├── anime/ # Anime pages
-│ ├── manga/ # Manga pages
-│ ├── movies/ # Movies pages
-│ ├── globals.css # Global styles
-│ └── layout.tsx # Root layout component
-├── component/ # Reusable components
-│ ├── About.tsx # About section
-│ ├── AutoPlaySwipeable.tsx # Auto-play swipeable component
-│ ├── Card.tsx # Card component for displaying anime/manga
-│ ├── Header.tsx # Header component
-│ ├── Footer.tsx # Footer component
-│ └── ListFetch.tsx # Component for fetching and displaying lists
-├── context/ # Context API for managing global state
-│ └── anime.tsx # Anime context
-├── types.ts # Type definitions
-├── .gitignore # Git ignore file
-├── package.json # Project metadata and dependencies
-├── package-lock.json # Dependency lock file
-├── postcss.config.mjs # PostCSS configuration
-└── tailwind.config.ts # Tailwind CSS configuration
+frontend/<br>
+├── app/ # Next.js application pages<br>
+│ ├── anime/ # Anime pages<br>
+│ ├── manga/ # Manga pages<br>
+│ ├── movies/ # Movies pages<br>
+│ ├── globals.css # Global styles<br>
+│ └── layout.tsx # Root layout component<br>
+├── component/ # Reusable components<br>
+│ ├── About.tsx # About section<br>
+│ ├── AutoPlaySwipeable.tsx # Auto-play swipeable component<br>
+│ ├── Card.tsx # Card component for displaying anime/manga<br>
+│ ├── Header.tsx # Header component<br>
+│ ├── Footer.tsx # Footer component<br>
+│ └── ListFetch.tsx # Component for fetching and displaying lists<br>
+├── context/ # Context API for managing global state<br>
+│ └── anime.tsx # Anime context<br>
+├── types.ts # Type definitions<br>
+├── .gitignore # Git ignore file<br>
+├── package.json # Project metadata and dependencies<br>
+├── package-lock.json # Dependency lock file<br>
+├── postcss.config.mjs # PostCSS configuration<br>
+└── tailwind.config.ts # Tailwind CSS configuration<br>
 
 ### Technologies Used
 
