@@ -8,10 +8,6 @@ import Swipeable from "./Swipeable";
 import Link from "next/link";
 
 function TopScore() {
-  // const { fetchTopAnimeData, TopAnime } = useContext(CreateContext) || {};
-  // useEffect(() => {
-  //   fetchTopAnimeData();
-  // }, [fetchTopAnimeData]);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -119,38 +115,6 @@ function TopScore() {
                   </motion.div>
                 </div>
               </div>
-              {/* <motion.div
-                variants={{
-                  hidden1: { opacity: 0, y: 50 },
-                  show: {
-                    opacity: 1,
-                    transition: {
-                      staggerChildren: 0.5,
-                      duration: 1,
-                    },
-                  },
-                }}
-                initial="hidden1"
-                animate="show"
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 0.5,
-                }}
-                className=" relative row-start-2 sm:row-start-auto sm:col-start-2 h-screen sm:h-full w-full p-5 sm:overflow-scroll grid gap-4 bg-blackOverlay"
-              >
-                <div className=" sticky -top-5 left-0 w-full h-full bg-gradient-to-b from-black via-black to-transparent text-white p-4 z-10" />
-                {TopAnime
-                  ? TopAnime.slice(0, 4).map((anime: Anime, index: number) => (
-                      <Card key={index} anime={anime} />
-                    ))
-                  : ["1", "2", "3", "4"].map((i: string, index: number) => (
-                      <div
-                        key={index}
-                        className="h-52 w-full rounded-xl bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-400 overflow-hidden"
-                      ></div>
-                    ))}
-                <div className=" sticky -bottom-5 left-0 w-full h-full bg-gradient-to-b from-transparent via-black to-black p-4 z-50" />
-              </motion.div> */}
             </section>
           ))}
         </>

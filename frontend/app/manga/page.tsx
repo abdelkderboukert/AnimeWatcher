@@ -36,7 +36,6 @@ const Page = () => {
 
   const handleIndexChange = (index: number) => {
     setCurrentIndex(index);
-    console.log("Current Index from child:", index); // You can handle the index as needed
   };
 
   const [MangaList, setMangaList] = useState<Manga[]>([]);
